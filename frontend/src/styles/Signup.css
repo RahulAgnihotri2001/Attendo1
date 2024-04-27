@@ -5,8 +5,10 @@
 
 .register-left {
   flex-grow: 1;
-  height: 100vh;
-  background-color: #e9e9e9;
+  margin-top: 60px;
+  margin-left: 20px;
+  height: 80vh;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +45,12 @@
 }
 
 .register-logo {
-  align-self: flex-start; /* Adjust logo alignment */
+  align-self: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.register-logo img {
+  width: 50px;
 }
 
 .register-center {
@@ -93,7 +100,6 @@ form button[type="submit"]:hover {
 }
 
 form button[type="button"] {
-  width: 20%;
   padding: 16px;
   border: none;
   border-radius: 4px;
@@ -104,7 +110,6 @@ form button[type="button"] {
   background-color: black;
   color: white;
   margin-right: 10px;
-  margin-bottom: 10px;
   transition: background-color 0.3s ease;
 }
 

@@ -1,6 +1,16 @@
-
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Dashboard, HomeLayout, Landing, Login, Logout, Register, Nav, NewSession, StudentDashboard } from "./pages";
+import {
+  TeacherDashboard,
+  HomeLayout,
+  Landing,
+  Login,
+  Logout,
+  Register,
+  Nav,
+  NewSession,
+  StudentDashboard,
+  ForgotPassword,
+} from "./pages/Index";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "teacher-dashboard",
-        element: <Dashboard />,
+        element: <TeacherDashboard />,
       },
       {
         path: "student-dashboard",
@@ -34,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "create-session",
         element: <NewSession />,
+      },
+      {
+        path: "forgot-password",
+        element: <ForgotPassword />,
       },
       {
         path: "*",
@@ -49,7 +63,7 @@ function App() {
       <Nav />
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
